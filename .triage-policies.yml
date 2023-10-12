@@ -22,7 +22,7 @@ resource_rules:
             attribute: updated_at
             condition: older_than
             interval_type: days
-            interval: 7
+            interval: 6
           state: opened
           labels:
             - stale

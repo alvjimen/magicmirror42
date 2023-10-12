@@ -67,7 +67,7 @@ triage:
   # https://medium.com/analytics-vidhya/gitlab-triage-bot-ba8afca4440a
   # https://gitlab.com/gitlab-org/ruby/gems/gitlab-triage/-/blob/master/README.md
   stage: test
-  image: ruby:2.7
+  image: ruby:latest
   script:
     - gem install gitlab-triage
     - gitlab-triage --token $TRIAGE_API_TOKEN --source projects --source-id $CI_PROJECT_PATH
